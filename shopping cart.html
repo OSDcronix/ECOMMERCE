@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Products - cronixstore</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="img\images\CRONIXSTORE-1.png" height="200px" width="220px">
+        </div>
+        <nav>
+            <ul id="menuitems">
+                <li><a href="cronix.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="acc.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="shopping cart.html"><img src="img\images\cart.png" width="20px" height="20"></a>
+        <img src="img\images\menu.png"  class="menu-icon"
+        onclick="menutoggle()">
+    </div>
+    </div>
+<!----- cart items details----->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="img\images\buy-1.jpg">
+                    <div>
+                        <p>Dark red Printed Tshirt</p>
+                        <small>price:&#x20B9; 599</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>&#x20B9; 599</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="img\products\f1.jpg">
+                    <div>
+                        <p>camio shirt</p>
+                        <small>price:&#x20B9; 2,400</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>&#x20B9; 2400</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="img\products\n6.jpg">
+                    <div>
+                        <p>Tss originals:army</p>
+                        <small>price:&#x20B9; 850</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>&#x20B9; 850</td>
+        </tr>
+    </table>
+</div>
+
+<div class="total-price">
+    <table>
+        <tr>
+            <td>Subtotal</td>
+            <td>&#x20B9; 3,849</td>
+        </tr>
+        <tr>
+            <td>Tax</td>
+            <td>&#x20B9; 75.00</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>&#x20B9; 3,924</td>
+        </tr>
+     </table>
+</div>
+
+
+
+
+
+
+
+    <!-------- footer -------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3> Download our app</h3>
+                    <p>dwonload app for android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="img\images\play-store.png">
+                        <img src="img\images\app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img\images\CRONIXSTORE-1.png" height="300px" width="220px">
+                    <p>our purpose is to sustainably make the pleasure and
+                    benefits of products accessible to many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful links</h3>
+                    <ul>
+                        <li>coupons</li>
+                        <li>blog post</li>
+                        <li>return policy</li>
+                        <li>join affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>follow us</h3>
+                    <ul>
+                        <li>facebook</li>
+                        <li>twitter</li>
+                        <li>instagram</li>
+                        <li>youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copyright 2022 - cronixstore</p>
+        </div>
+    </div>
+<!-------- js for toggle menu --------->
+<script>
+    var menuitems = document.getElementById("menuitems");
+
+    menuitems.style.maxHeight="0px";
+
+    function menutoggle(){
+        if(menuitems.style.maxHeight =="0px")
+        {
+            menuitems.style.maxHeight = "200px";
+        }
+        else
+        {
+            menuitems.style.maxHeight="0px";
+        }
+    }
+</script>
+
+
+</body>
+</html>
